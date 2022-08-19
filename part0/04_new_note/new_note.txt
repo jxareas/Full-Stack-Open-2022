@@ -1,0 +1,12 @@
+title New note
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+server-->browser: HTML-code 302
+browser->server: HTTP GET /notes
+
+note over browser:
+the browser reloads the notes page
+end note
+
+server-->browser: main.css
+server-->browser: main.js
+server-->browser: data.json
